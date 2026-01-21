@@ -98,7 +98,7 @@ export default function FAQPage() {
         <div className="mt-12 bg-slate-50 rounded-xl p-8 text-center">
           <h3 className="text-xl font-semibold text-slate-900 mb-2">Still Have Questions?</h3>
           <p className="text-slate-600 mb-6">
-            Contact us directly and we'll be happy to answer any specific questions about your belt or our process.
+            Contact us directly and we&apos;ll be happy to answer any specific questions about your belt or our process.
           </p>
           <CTAButtons className="justify-center" />
         </div>

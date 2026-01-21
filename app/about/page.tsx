@@ -51,13 +51,13 @@ export default function AboutPage() {
                 For over 35 years, {COMPANY_NAME} has been a trusted name in the global trade of used plied rubber conveyor belts. We are not brokers or middlemen—we are direct buyers with the experience, logistics infrastructure, and market knowledge to handle complex international transactions.
               </p>
               <p>
-                Our business was built on a simple principle: provide industrial suppliers with a reliable, professional buyer who handles everything from evaluation to container shipping. We understand that sellers need speed, clarity, and dependability. That's exactly what we deliver.
+                Our business was built on a simple principle: provide industrial suppliers with a reliable, professional buyer who handles everything from evaluation to container shipping. We understand that sellers need speed, clarity, and dependability. That&apos;s exactly what we deliver.
               </p>
               <p>
                 With offices in the United States and Pakistan, we maintain a global presence that allows us to coordinate pickups worldwide and manage export logistics efficiently. Our team has handled thousands of shipments, working with mines, quarries, cement plants, recycling operations, and industrial surplus dealers across multiple continents.
               </p>
               <p>
-                We focus exclusively on plied rubber (fabric-reinforced) conveyor belts because that's where our expertise and market demand align. This specialization allows us to provide better evaluations, faster responses, and more competitive offers than generalist buyers.
+                We focus exclusively on plied rubber (fabric-reinforced) conveyor belts because that&apos;s where our expertise and market demand align. This specialization allows us to provide better evaluations, faster responses, and more competitive offers than generalist buyers.
               </p>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function AboutPage() {
             Work With Experienced Buyers
           </h3>
           <p className="text-lg text-slate-600 mb-8">
-            Get a professional evaluation from a team that's been in the business for 35+ years.
+            Get a professional evaluation from a team that&apos;s been in the business for 35+ years.
           </p>
           <CTAButtons className="justify-center" />
         </div>

@@ -371,10 +371,10 @@ export function QuoteForm() {
         />
         <div className="space-y-1">
           <Label htmlFor="acknowledgment" className="font-medium cursor-pointer">
-            I confirm this is NOT steel-reinforced / steel cord (or I'm not sure and need verification)
+            I confirm this is NOT steel-reinforced / steel cord (or I&apos;m not sure and need verification)
           </Label>
           <p className="text-sm text-slate-600">
-            We only purchase plied rubber belts. If you're unsure, we'll help identify your belt type.
+            We only purchase plied rubber belts. If you&apos;re unsure, we&apos;ll help identify your belt type.
           </p>
         </div>
       </div>

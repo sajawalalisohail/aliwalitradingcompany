@@ -116,7 +116,7 @@ export function WhatWeBuySection() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-slate-700">
-                  Send us photos and specifications. We'll quickly confirm if your belt meets our requirements.
+                  Send us photos and specifications. We&apos;ll quickly confirm if your belt meets our requirements.
                 </p>
                 <Button className="w-full" asChild>
                   <Link href="/sell">Send Photos for Evaluation</Link>

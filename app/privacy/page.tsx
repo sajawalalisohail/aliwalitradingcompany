@@ -20,7 +20,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">Introduction</h2>
               <p>
-                {COMPANY_NAME} ("we," "us," or "our") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                {COMPANY_NAME} (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
               </p>
             </section>
 

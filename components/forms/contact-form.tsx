@@ -39,7 +39,7 @@ export function ContactForm() {
           <CheckCircle2 className="h-8 w-8 text-green-600" />
         </div>
         <h3 className="text-xl font-semibold text-slate-900 mb-2">Message Sent!</h3>
-        <p className="text-slate-600">We'll get back to you within 24-48 hours.</p>
+        <p className="text-slate-600">We&apos;ll get back to you within 24-48 hours.</p>
       </div>
     )
   }
