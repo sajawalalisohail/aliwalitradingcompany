@@ -30,7 +30,7 @@ export default function SellPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary font-bold">2.</span>
-              <span>If your belt meets our requirements, we'll send you an evaluation and offer</span>
+              <span>If your belt meets our requirements, we&apos;ll send you an evaluation and offer</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary font-bold">3.</span>

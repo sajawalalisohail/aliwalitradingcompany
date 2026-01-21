@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 import { Upload, X, CheckCircle2, Loader2 } from "lucide-react"
 import { useDropzone } from "react-dropzone"
 import { Button } from "@/components/ui/button"
@@ -121,7 +122,7 @@ export function QuoteForm() {
         </div>
         <h2 className="text-3xl font-bold text-slate-900 mb-4">Quote Submitted Successfully!</h2>
         <p className="text-lg text-slate-600 mb-4">
-          Thank you for your submission. We've received your information and photos.
+          Thank you for your submission. We&apos;ve received your information and photos.
         </p>
         <p className="text-slate-600">
           Our team will review your belt specifications and respond within 24-48 hours.
@@ -337,10 +338,13 @@ export function QuoteForm() {
               {files.map((file, idx) => (
                 <div key={idx} className="relative group">
                   <div className="aspect-square bg-slate-100 rounded-lg overflow-hidden">
-                    <img
+                    <Image
                       src={URL.createObjectURL(file)}
                       alt={`Upload ${idx + 1}`}
+                      width={200}
+                      height={200}
                       className="w-full h-full object-cover"
+                      unoptimized
                     />
                   </div>
                   <button
