@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   authors: [{ name: COMPANY_NAME }],
   creator: COMPANY_NAME,
   publisher: COMPANY_NAME,
-  metadataBase: new URL("https://aliwalitradingco.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://aliwalitradingco.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://aliwalitradingco.com",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://aliwalitradingco.com",
     siteName: COMPANY_NAME,
     title: `${COMPANY_NAME} | ${TAGLINE}`,
     description: "Global buyers of used plied rubber conveyor belting. 35+ years experience. Pickup + container shipping handled end-to-end.",
@@ -77,8 +77,8 @@ export default function RootLayout({
               "@type": "Organization",
               name: COMPANY_NAME,
               description: "Global buyers of used plied rubber conveyor belting with 35+ years of experience",
-              url: "https://aliwalitradingco.com",
-              logo: "https://aliwalitradingco.com/logo.png",
+              url: process.env.NEXT_PUBLIC_SITE_URL || "https://aliwalitradingco.com",
+              logo: `${process.env.NEXT_PUBLIC_SITE_URL || "https://aliwalitradingco.com"}/logo.png`,
               foundingDate: "1990",
               contactPoint: [
                 {
