@@ -11,8 +11,9 @@ export const metadata: Metadata = {
 
 export default function WhatWeBuyPage() {
   return (
-    <div className="py-16">
-      <div className="container mx-auto px-4 max-w-5xl">
+    <div className="relative min-h-screen bg-gradient-to-b from-slate-50 via-green-50/20 to-slate-100">
+      <div className="py-16">
+        <div className="container mx-auto px-4 max-w-5xl">
         <SectionHeader
           title="What We Buy"
           subtitle="Clear specifications for the conveyor belts we purchase worldwide"
@@ -194,6 +195,7 @@ export default function WhatWeBuyPage() {
           </p>
           <CTAButtons className="justify-center" />
         </div>
+      </div>
       </div>
     </div>
   )

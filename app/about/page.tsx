@@ -35,8 +35,9 @@ const values = [
 
 export default function AboutPage() {
   return (
-    <div className="py-16">
-      <div className="container mx-auto px-4 max-w-5xl">
+    <div className="relative min-h-screen bg-gradient-to-b from-slate-50 via-blue-50/30 to-slate-900/5">
+      <div className="py-16">
+        <div className="container mx-auto px-4 max-w-5xl">
         <SectionHeader
           title={`About ${COMPANY_NAME}`}
           subtitle="Real buyers with decades of experience in the global conveyor belt trade"
@@ -167,6 +168,7 @@ export default function AboutPage() {
           </p>
           <CTAButtons className="justify-center" />
         </div>
+      </div>
       </div>
     </div>
   )

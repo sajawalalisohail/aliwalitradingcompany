@@ -1,35 +1,36 @@
 "use client"
 
 export function MovingStrip() {
-  const industries = [
-    "Mining",
-    "Quarry",
-    "Cement",
-    "Ports",
-    "Recycling",
-    "Industrial Surplus",
-    "Belt Service",
+  const beltTypes = [
+    "Plied Rubber Belts",
+    "3-Ply Conveyor",
+    "4-Ply Conveyor",
+    "5-Ply Conveyor",
+    "Used Conveyor Belts",
+    "Industrial Belting",
+    "Fabric-Reinforced Belts",
   ]
 
   const services = [
-    "Pickup",
-    "Rolling",
-    "Packing",
-    "Container Loading",
-    "Export Docs",
+    "Global Pickup",
+    "Professional Packing",
+    "Container Shipping",
+    "Export Documentation",
     "Logistics Coordination",
+    "Fast Evaluation",
+    "Fair Pricing",
   ]
 
   return (
-    <div className="bg-slate-900 py-8 overflow-hidden">
-      <div className="space-y-4">
-        {/* Industries Strip */}
+    <div className="relative py-8 overflow-hidden">
+      <div className="space-y-5">
+        {/* Belt Types Strip */}
         <div className="relative flex overflow-hidden">
           <div className="flex animate-scroll whitespace-nowrap">
-            {[...industries, ...industries, ...industries].map((item, idx) => (
+            {[...beltTypes, ...beltTypes, ...beltTypes].map((item, idx) => (
               <div
                 key={idx}
-                className="mx-4 px-6 py-2 bg-white/10 rounded-full text-white text-sm font-medium"
+                className="mx-2 px-5 py-2 bg-blue-600/80 backdrop-blur-md rounded-lg text-white text-xs font-semibold shadow-md hover:bg-blue-500/90 transition-all duration-300 flex-shrink-0 border border-blue-400/30"
               >
                 {item}
               </div>
@@ -43,7 +44,7 @@ export function MovingStrip() {
             {[...services, ...services, ...services].map((item, idx) => (
               <div
                 key={idx}
-                className="mx-4 px-6 py-2 bg-primary/80 rounded-full text-white text-sm font-medium"
+                className="mx-2 px-5 py-2 bg-slate-600/60 backdrop-blur-md rounded-lg text-white text-xs font-semibold shadow-md hover:bg-slate-500/80 transition-all duration-300 flex-shrink-0 border border-slate-400/20"
               >
                 {item}
               </div>

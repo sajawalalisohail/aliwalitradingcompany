@@ -74,8 +74,9 @@ const faqs = [
 
 export default function FAQPage() {
   return (
-    <div className="py-16">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <div className="relative min-h-screen bg-gradient-to-br from-slate-50 via-amber-50/20 to-slate-100">
+      <div className="py-16">
+        <div className="container mx-auto px-4 max-w-3xl">
         <SectionHeader
           title="Frequently Asked Questions"
           subtitle="Clear answers to common questions about selling used conveyor belts"
@@ -102,6 +103,7 @@ export default function FAQPage() {
           </p>
           <CTAButtons className="justify-center" />
         </div>
+      </div>
       </div>
     </div>
   )

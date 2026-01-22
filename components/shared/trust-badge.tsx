@@ -9,9 +9,9 @@ interface TrustBadgeProps {
 
 export function TrustBadge({ icon: Icon, text, className }: TrustBadgeProps) {
   return (
-    <div className={cn("flex items-center space-x-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full border border-slate-200 shadow-sm", className)}>
-      <Icon className="h-4 w-4 text-primary" />
-      <span className="text-sm font-medium text-slate-700">{text}</span>
+    <div className={cn("flex items-center space-x-2 bg-slate-800/70 backdrop-blur-sm px-4 py-2 rounded-full border border-white shadow-md", className)}>
+      <Icon className="h-4 w-4 text-white" />
+      <span className="text-sm font-semibold text-white">{text}</span>
     </div>
   )
 }

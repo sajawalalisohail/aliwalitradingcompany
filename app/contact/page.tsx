@@ -12,8 +12,9 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="py-16">
-      <div className="container mx-auto px-4 max-w-5xl">
+    <div className="relative min-h-screen bg-gradient-to-br from-blue-50 via-slate-50 to-slate-100">
+      <div className="py-16">
+        <div className="container mx-auto px-4 max-w-5xl">
         <SectionHeader
           title="Contact Us"
           subtitle="Multiple ways to reach our team for quotes, questions, or general inquiries"
@@ -134,6 +135,7 @@ export default function ContactPage() {
           </p>
           <ContactForm />
         </div>
+      </div>
       </div>
     </div>
   )

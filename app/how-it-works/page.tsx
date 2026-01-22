@@ -80,8 +80,9 @@ const detailedSteps = [
 
 export default function HowItWorksPage() {
   return (
-    <div className="py-16">
-      <div className="container mx-auto px-4 max-w-5xl">
+    <div className="relative min-h-screen bg-gradient-to-b from-purple-50/30 via-slate-50 to-blue-50/20">
+      <div className="py-16">
+        <div className="container mx-auto px-4 max-w-5xl">
         <SectionHeader
           title="How It Works"
           subtitle="A transparent, professional process from initial contact to container shipping"
@@ -148,6 +149,7 @@ export default function HowItWorksPage() {
           </p>
           <CTAButtons className="justify-center" />
         </div>
+      </div>
       </div>
     </div>
   )

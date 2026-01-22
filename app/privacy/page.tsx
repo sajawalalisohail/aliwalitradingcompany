@@ -9,8 +9,9 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="py-16">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <div className="relative min-h-screen bg-gradient-to-b from-slate-50 via-blue-50/10 to-slate-100">
+      <div className="py-16">
+        <div className="container mx-auto px-4 max-w-4xl">
         <SectionHeader title="Privacy Policy" centered />
 
         <div className="mt-12 prose prose-slate max-w-none">
@@ -86,6 +87,7 @@ export default function PrivacyPage() {
             </section>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

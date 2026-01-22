@@ -9,8 +9,9 @@ export const metadata: Metadata = {
 
 export default function SellPage() {
   return (
-    <div className="py-16 bg-slate-50">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <div className="relative min-h-screen bg-gradient-to-b from-slate-900/5 via-blue-900/10 to-slate-50">
+      <div className="py-16">
+        <div className="container mx-auto px-4 max-w-4xl">
         <SectionHeader
           title="Sell Your Used Conveyor Belt"
           subtitle="Get a fast, clear evaluation from real buyers. We handle all logistics from pickup to container shipping."
@@ -42,6 +43,7 @@ export default function SellPage() {
             </li>
           </ul>
         </div>
+      </div>
       </div>
     </div>
   )
