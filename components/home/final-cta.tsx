@@ -16,7 +16,7 @@ export function FinalCTA() {
             className="max-w-3xl mx-auto space-y-6"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900">
-              Tell us what you need, <span className="text-blue-700">we'll quote fast.</span>
+              Tell us what you need, <span className="text-blue-700">we&apos;ll quote fast.</span>
             </h2>
             <div className="space-y-2">
               <p className="text-lg text-slate-600">
