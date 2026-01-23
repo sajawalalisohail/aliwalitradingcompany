@@ -13,13 +13,13 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/gallery/downloaded/ (3).jpeg"
+          src="/gallery/downloaded/ (8).jpeg"
           alt=""
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-slate-900/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/75 to-slate-900/60" />
       </div>
 
       <div className="container mx-auto px-4 py-20">
@@ -32,10 +32,10 @@ export function Hero() {
             className="space-y-8"
           >
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight drop-shadow-sm">
                 We Buy Used Plied Rubber Conveyor Belting Worldwide.
               </h1>
-              <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl">
+              <p className="text-lg md:text-xl text-blue-100/90 leading-relaxed max-w-xl">
                 Real buyers with 35+ years experience. We handle everything from global pickup coordination to container shipping end-to-end.
               </p>
             </div>

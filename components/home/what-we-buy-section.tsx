@@ -40,7 +40,7 @@ export function WhatWeBuySection() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span>Prefer 4+ ply fabric-reinforced</span>
+                    <span>PVC and lightweight belts</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
@@ -90,10 +90,6 @@ export function WhatWeBuySection() {
                   <li className="flex items-start gap-2">
                     <XCircle className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span>Contaminated material</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <XCircle className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
-                    <span>PVC or lightweight belts</span>
                   </li>
                 </ul>
               </CardContent>

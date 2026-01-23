@@ -70,16 +70,27 @@ export function Header() {
 
           {/* Desktop CTAs */}
           <div className="hidden lg:flex items-center space-x-3">
-            <Button variant="outline" size="default" className="border-slate-600 text-slate-300 hover:bg-slate-800/80 hover:text-white hover:border-slate-500" asChild>
+            <div className="flex items-center space-x-2">
               <a
-                href={`https://wa.me/${CONTACT.whatsapp.replace(/\D/g, "")}`}
+                href={`https://wa.me/${CONTACT.whatsapp.usa.replace(/\D/g, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-sm text-slate-300 hover:text-white transition-colors"
               >
-                <MessageCircle className="h-4 w-4" />
-                WhatsApp
+                <MessageCircle className="h-4 w-4 text-green-500" />
+                <span className="hidden xl:inline">US:</span> {CONTACT.phone.usa}
               </a>
-            </Button>
+              <span className="text-slate-600">|</span>
+              <a
+                href={`https://wa.me/${CONTACT.whatsapp.pakistan.replace(/\D/g, "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-sm text-slate-300 hover:text-white transition-colors"
+              >
+                <MessageCircle className="h-4 w-4 text-green-500" />
+                <span className="hidden xl:inline">PK:</span> {CONTACT.phone.pakistan}
+              </a>
+            </div>
             <Button size="default" className="bg-blue-900 hover:bg-blue-950 text-white" asChild>
               <Link href="/sell">Get a Quote</Link>
             </Button>
@@ -122,17 +133,26 @@ export function Header() {
                 </Link>
               ))}
               <div className="flex flex-col space-y-2 pt-4 border-t border-slate-700/50">
-                <Button variant="outline" className="w-full border-slate-600 text-slate-300 hover:bg-slate-800/80 hover:text-white hover:border-slate-500" asChild>
-                  <a
-                    href={`https://wa.me/${CONTACT.whatsapp.replace(/\D/g, "")}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MessageCircle className="h-4 w-4" />
-                    WhatsApp
-                  </a>
-                </Button>
-                <Button className="w-full bg-blue-900 hover:bg-blue-950 text-white" asChild>
+                <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">WhatsApp</p>
+                <a
+                  href={`https://wa.me/${CONTACT.whatsapp.usa.replace(/\D/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors py-2"
+                >
+                  <MessageCircle className="h-4 w-4 text-green-500" />
+                  US: {CONTACT.phone.usa}
+                </a>
+                <a
+                  href={`https://wa.me/${CONTACT.whatsapp.pakistan.replace(/\D/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors py-2"
+                >
+                  <MessageCircle className="h-4 w-4 text-green-500" />
+                  PK: {CONTACT.phone.pakistan}
+                </a>
+                <Button className="w-full bg-blue-900 hover:bg-blue-950 text-white mt-2" asChild>
                   <Link href="/sell">Get a Quote</Link>
                 </Button>
               </div>

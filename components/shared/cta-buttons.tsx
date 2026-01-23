@@ -21,11 +21,11 @@ export function CTAButtons({
       </Button>
       <Button size="lg" variant="outline" asChild>
         <a
-          href={`https://wa.me/${CONTACT.whatsapp.replace(/\D/g, "")}`}
+          href={`https://wa.me/${CONTACT.whatsapp.pakistan.replace(/\D/g, "")}`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <MessageCircle className="h-5 w-5" />
+          <MessageCircle className="h-5 w-5 text-green-500" />
           {secondaryText}
         </a>
       </Button>

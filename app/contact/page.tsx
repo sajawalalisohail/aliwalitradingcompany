@@ -24,19 +24,29 @@ export default function ContactPage() {
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           <Card className="hover:shadow-lg transition-shadow">
             <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MessageCircle className="h-6 w-6 text-primary" />
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MessageCircle className="h-6 w-6 text-green-600" />
               </div>
               <h3 className="font-semibold text-slate-900 mb-2">WhatsApp</h3>
               <p className="text-sm text-slate-600 mb-4">Fast response for urgent inquiries</p>
-              <a
-                href={`https://wa.me/${CONTACT.whatsapp.replace(/\D/g, "")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline font-medium"
-              >
-                {CONTACT.whatsapp}
-              </a>
+              <div className="space-y-2">
+                <a
+                  href={`https://wa.me/${CONTACT.whatsapp.usa.replace(/\D/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-primary hover:underline text-sm"
+                >
+                  US: {CONTACT.phone.usa}
+                </a>
+                <a
+                  href={`https://wa.me/${CONTACT.whatsapp.pakistan.replace(/\D/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-primary hover:underline text-sm"
+                >
+                  PK: {CONTACT.phone.pakistan}
+                </a>
+              </div>
             </CardContent>
           </Card>
 

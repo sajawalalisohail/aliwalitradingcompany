@@ -1,18 +1,29 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { SectionHeader } from "@/components/shared/section-header"
 import { Button } from "@/components/ui/button"
 
-const galleryItems = [
-  { title: "Rolled Belts Ready for Export", category: "loads" },
-  { title: "Container Loading Operations", category: "containers" },
-  { title: "Warehouse Inventory Stacks", category: "warehouse" },
-  { title: "Rolling and Packing Process", category: "rolling" },
-  { title: "Multiple Container Shipments", category: "containers" },
-  { title: "Quality Inspection", category: "loads" },
+const operationsPhotos = [
+  {
+    src: "/gallery/bulk/ (1).jpg",
+    caption: "Bulk yard inventory"
+  },
+  {
+    src: "/gallery/rolled/ (1).jpg",
+    caption: "Rolled belts staged for transport"
+  },
+  {
+    src: "/gallery/loading/ (1).jpg",
+    caption: "Container loading in progress"
+  },
+  {
+    src: "/gallery/loading/ (3).jpg",
+    caption: "Multiple containers loaded"
+  },
 ]
 
 export function GalleryPreview() {
@@ -21,26 +32,31 @@ export function GalleryPreview() {
       <div className="container mx-auto px-4">
         <SectionHeader
           title="See Our Operations"
-          subtitle="Real photos from our global buying and logistics operations"
+          subtitle="Real photos from our buying and logistics work"
           centered
         />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-          {galleryItems.map((item, idx) => (
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-12">
+          {operationsPhotos.map((photo, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.05 }}
-              className="group relative aspect-[4/3] rounded-lg overflow-hidden bg-slate-200 hover:shadow-xl transition-shadow cursor-pointer"
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="group relative aspect-[4/3] rounded-lg overflow-hidden bg-slate-100"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-slate-300 to-slate-400 flex items-center justify-center">
-                <p className="text-slate-600 text-sm text-center px-4">{item.title}</p>
-              </div>
-              <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <span className="text-white font-medium">View Gallery</span>
-              </div>
+              <Image
+                src={photo.src}
+                alt={photo.caption}
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent" />
+              <p className="absolute bottom-3 left-3 right-3 text-white text-sm font-medium">
+                {photo.caption}
+              </p>
             </motion.div>
           ))}
         </div>

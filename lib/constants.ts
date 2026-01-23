@@ -7,10 +7,13 @@ export const CONTACT = {
     info: "info@aliwalitradingco.com",
   },
   phone: {
-    usa: "+1 (___) ___-____",
-    pakistan: "+92 (___) ___-____",
+    usa: "+1 304 685 4016",
+    pakistan: "+92 322 4001968",
   },
-  whatsapp: "+1 (___) ___-____",
+  whatsapp: {
+    usa: "+1 304 685 4016",
+    pakistan: "+92 322 4001968",
+  },
   businessHours: "Monday - Friday: 9:00 AM - 6:00 PM (PKT)",
 }
 
@@ -20,7 +23,10 @@ export const OFFICES = {
 }
 
 export const SOCIAL = {
-  whatsapp: `https://wa.me/${CONTACT.whatsapp.replace(/\D/g, '')}`,
+  whatsapp: {
+    usa: `https://wa.me/${CONTACT.whatsapp.usa.replace(/\D/g, '')}`,
+    pakistan: `https://wa.me/${CONTACT.whatsapp.pakistan.replace(/\D/g, '')}`,
+  },
 }
 
 export const NAV_LINKS = [

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "What's the difference between plied rubber and steel cord belts?",
-    answer: "Plied rubber belts are fabric-reinforced conveyor belts with multiple layers (plies) of fabric material bonded together with rubber. Steel cord belts contain steel wires or cables running through them for extra strength. We ONLY purchase plied rubber belts—we do not accept steel cord or steel-reinforced belts under any circumstances.",
+    answer: "Plied rubber belts are fabric-reinforced conveyor belts with multiple layers (plies) of fabric material bonded together with rubber. Steel cord belts contain steel wires or cables running through them for extra strength. We ONLY purchase plied rubber belts. We do not accept steel cord or steel-reinforced belts under any circumstances.",
   },
   {
     question: "What ply counts do you accept?",
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: "Do you handle international pickup?",
-    answer: "Yes. We coordinate pickup, freight, export documentation, and container shipping from anywhere worldwide to Pakistan. You don't need to arrange any logistics—we handle everything end-to-end.",
+    answer: "Yes. We coordinate pickup, freight, export documentation, and container shipping from anywhere worldwide to Pakistan. You don't need to arrange any logistics. We handle everything end-to-end.",
   },
   {
     question: "How fast do you respond to quote requests?",

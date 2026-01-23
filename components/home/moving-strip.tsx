@@ -1,5 +1,7 @@
 "use client"
 
+import { motion } from "framer-motion"
+
 export function MovingStrip() {
   const beltTypes = [
     "Plied Rubber Belts",
@@ -22,10 +24,22 @@ export function MovingStrip() {
   ]
 
   return (
-    <div className="relative py-8 overflow-hidden">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="relative py-8 overflow-hidden"
+    >
       <div className="space-y-5">
         {/* Belt Types Strip */}
-        <div className="relative flex overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+          className="relative flex overflow-hidden"
+        >
           <div className="flex animate-scroll whitespace-nowrap">
             {[...beltTypes, ...beltTypes, ...beltTypes].map((item, idx) => (
               <div
@@ -36,10 +50,16 @@ export function MovingStrip() {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* Services Strip */}
-        <div className="relative flex overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+          className="relative flex overflow-hidden"
+        >
           <div className="flex animate-scroll whitespace-nowrap" style={{ animationDirection: "reverse" }}>
             {[...services, ...services, ...services].map((item, idx) => (
               <div
@@ -50,8 +70,8 @@ export function MovingStrip() {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }

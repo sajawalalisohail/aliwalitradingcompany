@@ -49,7 +49,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Our Story</h2>
             <div className="space-y-4 text-slate-700 leading-relaxed">
               <p>
-                For over 35 years, {COMPANY_NAME} has been a trusted name in the global trade of used plied rubber conveyor belts. We are not brokers or middlemen—we are direct buyers with the experience, logistics infrastructure, and market knowledge to handle complex international transactions.
+                For over 35 years, {COMPANY_NAME} has been a trusted name in the global trade of used plied rubber conveyor belts. We are not brokers or middlemen. We are direct buyers with the experience, logistics infrastructure, and market knowledge to handle complex international transactions.
               </p>
               <p>
                 Our business was built on a simple principle: provide industrial suppliers with a reliable, professional buyer who handles everything from evaluation to container shipping. We understand that sellers need speed, clarity, and dependability. That&apos;s exactly what we deliver.

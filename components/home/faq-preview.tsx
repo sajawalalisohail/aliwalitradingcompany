@@ -1,5 +1,6 @@
 "use client"
 
+import { motion } from "framer-motion"
 import Link from "next/link"
 import {
   Accordion,
@@ -12,7 +13,7 @@ import { SectionHeader } from "@/components/shared/section-header"
 const faqs = [
   {
     question: "What's the difference between plied rubber and steel cord belts?",
-    answer: "Plied rubber belts are fabric-reinforced (typically 3-5 layers of fabric). Steel cord belts have steel wires running through them. We ONLY buy plied rubber belts—no steel cord or steel-reinforced belts.",
+    answer: "Plied rubber belts are fabric-reinforced (typically 3-5 layers of fabric). Steel cord belts have steel wires running through them. We ONLY buy plied rubber belts. No steel cord or steel-reinforced belts.",
   },
   {
     question: "What quantities do you buy?",
@@ -40,22 +41,36 @@ export function FAQPreview() {
 
         <Accordion type="single" collapsible className="mt-12">
           {faqs.map((faq, idx) => (
-            <AccordionItem key={idx} value={`item-${idx}`}>
-              <AccordionTrigger className="text-left">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-slate-600">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: idx * 0.1, ease: "easeOut" }}
+            >
+              <AccordionItem value={`item-${idx}`}>
+                <AccordionTrigger className="text-left">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-slate-600">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            </motion.div>
           ))}
         </Accordion>
 
-        <div className="text-center mt-8">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.5, ease: "easeOut" }}
+          className="text-center mt-8"
+        >
           <Link href="/faq" className="text-primary hover:underline font-medium">
             View all FAQs →
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

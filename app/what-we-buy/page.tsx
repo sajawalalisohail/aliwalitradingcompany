@@ -78,6 +78,10 @@ export default function WhatWeBuyPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span>PVC and lightweight conveyor belts</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                   <span>Fabric-reinforced construction</span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -91,10 +95,6 @@ export default function WhatWeBuyPage() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                   <span>Mining, quarry, cement plant belts</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span>Belts with normal wear patterns</span>
                 </li>
               </ul>
             </CardContent>
@@ -124,10 +124,6 @@ export default function WhatWeBuyPage() {
                 <li className="flex items-start gap-2">
                   <XCircle className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                   <span>Heavy contamination (oil, chemicals)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <XCircle className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
-                  <span>PVC or lightweight conveyor belts</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <XCircle className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />

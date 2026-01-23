@@ -86,22 +86,26 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href={`tel:${CONTACT.phone.usa}`}
-                  className="flex items-center space-x-2 hover:text-primary transition-colors"
-                >
-                  <Phone className="h-4 w-4" />
-                  <span>{CONTACT.phone.usa}</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`https://wa.me/${CONTACT.whatsapp.replace(/\D/g, "")}`}
+                  href={`https://wa.me/${CONTACT.whatsapp.usa.replace(/\D/g, "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 hover:text-primary transition-colors"
                 >
-                  <MessageCircle className="h-4 w-4" />
-                  <span>WhatsApp</span>
+                  <MessageCircle className="h-4 w-4 text-green-500" />
+                  <span>{CONTACT.phone.usa}</span>
+                  <span className="text-xs text-green-500">(WhatsApp)</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`https://wa.me/${CONTACT.whatsapp.pakistan.replace(/\D/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 hover:text-primary transition-colors"
+                >
+                  <MessageCircle className="h-4 w-4 text-green-500" />
+                  <span>{CONTACT.phone.pakistan}</span>
+                  <span className="text-xs text-green-500">(WhatsApp)</span>
                 </a>
               </li>
             </ul>
