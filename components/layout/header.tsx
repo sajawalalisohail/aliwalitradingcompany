@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, MessageCircle } from "lucide-react"
@@ -36,9 +37,17 @@ export function Header() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
+          <Link href="/" className="flex items-center space-x-3 group">
+            <Image
+              src="/awt icon.png"
+              alt="ALI WALI TRADING COMPANY Icon"
+              width={48}
+              height={48}
+              className="h-12 w-12 object-contain flex-shrink-0"
+              priority
+            />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-white leading-tight group-hover:text-blue-400 transition-colors">
+              <span className="text-lg font-bold text-white leading-tight group-hover:text-blue-400 transition-colors">
                 {COMPANY_NAME}
               </span>
               <span className="text-xs text-slate-400 leading-tight group-hover:text-blue-300 transition-colors">
@@ -54,7 +63,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-all duration-200 relative",
+                  "text-xs font-medium transition-all duration-200 relative",
                   pathname === link.href
                     ? "text-blue-400"
                     : "text-slate-300 hover:text-white"
@@ -69,26 +78,25 @@ export function Header() {
           </nav>
 
           {/* Desktop CTAs */}
-          <div className="hidden lg:flex items-center space-x-3">
-            <div className="flex items-center space-x-2">
+          <div className="hidden lg:flex items-center space-x-4">
+            <div className="flex flex-col items-end space-y-1">
               <a
                 href={`https://wa.me/${CONTACT.whatsapp.usa.replace(/\D/g, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-slate-300 hover:text-white transition-colors"
+                className="flex items-center gap-1.5 text-xs text-slate-300 hover:text-white transition-colors"
               >
-                <MessageCircle className="h-4 w-4 text-green-500" />
-                <span className="hidden xl:inline">US:</span> {CONTACT.phone.usa}
+                <MessageCircle className="h-3.5 w-3.5 text-green-500" />
+                <span>US: {CONTACT.phone.usa}</span>
               </a>
-              <span className="text-slate-600">|</span>
               <a
                 href={`https://wa.me/${CONTACT.whatsapp.pakistan.replace(/\D/g, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-slate-300 hover:text-white transition-colors"
+                className="flex items-center gap-1.5 text-xs text-slate-300 hover:text-white transition-colors"
               >
-                <MessageCircle className="h-4 w-4 text-green-500" />
-                <span className="hidden xl:inline">PK:</span> {CONTACT.phone.pakistan}
+                <MessageCircle className="h-3.5 w-3.5 text-green-500" />
+                <span>PK: {CONTACT.phone.pakistan}</span>
               </a>
             </div>
             <Button size="default" className="bg-blue-900 hover:bg-blue-950 text-white" asChild>
@@ -123,7 +131,7 @@ export function Header() {
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={cn(
-                    "text-base font-medium transition-colors py-2 px-2 rounded-md",
+                    "text-sm font-medium transition-colors py-2 px-2 rounded-md",
                     pathname === link.href
                       ? "text-blue-400 bg-slate-800/50"
                       : "text-slate-300 hover:text-white hover:bg-slate-800/30"
@@ -132,25 +140,25 @@ export function Header() {
                   {link.label}
                 </Link>
               ))}
-              <div className="flex flex-col space-y-2 pt-4 border-t border-slate-700/50">
-                <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">WhatsApp</p>
+              <div className="flex flex-col space-y-3 pt-4 border-t border-slate-700/50">
+                <p className="text-xs text-slate-500 uppercase tracking-wide mb-2">WhatsApp</p>
                 <a
                   href={`https://wa.me/${CONTACT.whatsapp.usa.replace(/\D/g, "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors py-2"
+                  className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors py-1.5"
                 >
                   <MessageCircle className="h-4 w-4 text-green-500" />
-                  US: {CONTACT.phone.usa}
+                  <span>US: {CONTACT.phone.usa}</span>
                 </a>
                 <a
                   href={`https://wa.me/${CONTACT.whatsapp.pakistan.replace(/\D/g, "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors py-2"
+                  className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors py-1.5"
                 >
                   <MessageCircle className="h-4 w-4 text-green-500" />
-                  PK: {CONTACT.phone.pakistan}
+                  <span>PK: {CONTACT.phone.pakistan}</span>
                 </a>
                 <Button className="w-full bg-blue-900 hover:bg-blue-950 text-white mt-2" asChild>
                   <Link href="/sell">Get a Quote</Link>

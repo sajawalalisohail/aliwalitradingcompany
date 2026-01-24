@@ -34,7 +34,7 @@ const steps = [
 
 export function HowItWorksSection() {
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-20 bg-gradient-to-b from-blue-50/30 via-slate-50 to-blue-50/20">
       <div className="container mx-auto px-4">
         <SectionHeader
           title="How It Works"
@@ -51,14 +51,14 @@ export function HowItWorksSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
             >
-              <Card className="relative h-full hover:shadow-lg transition-shadow">
+              <Card className="relative h-full hover:shadow-lg transition-shadow border-blue-100 bg-white">
                 <CardContent className="pt-6">
-                  <div className="absolute top-4 right-4 text-5xl font-bold text-slate-100">
+                  <div className="absolute top-4 right-4 text-5xl font-bold text-blue-50">
                     {step.number}
                   </div>
                   <div className="relative z-10 space-y-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                      <step.icon className="h-6 w-6 text-primary" />
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                      <step.icon className="h-6 w-6 text-blue-600" />
                     </div>
                     <h3 className="text-xl font-semibold text-slate-900">{step.title}</h3>
                     <p className="text-slate-600 text-sm">{step.description}</p>

@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 
 export function WhatWeBuySection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-b from-blue-50/50 to-white">
       <div className="container mx-auto px-4">
         <SectionHeader
           title="What We Buy"
@@ -123,9 +123,9 @@ export function WhatWeBuySection() {
         </div>
 
         <div className="text-center mt-8">
-          <Link href="/what-we-buy" className="text-primary hover:underline font-medium">
-            View detailed specifications →
-          </Link>
+          <Button size="default" className="bg-blue-900 hover:bg-blue-950 text-white" asChild>
+            <Link href="/what-we-buy">View detailed specifications</Link>
+          </Button>
         </div>
       </div>
     </section>

@@ -74,7 +74,7 @@ const faqs = [
 
 export default function FAQPage() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-slate-50 via-amber-50/20 to-slate-100">
+    <div className="relative min-h-screen bg-gradient-to-br from-blue-50/40 via-slate-50 to-blue-50/30">
       <div className="py-16">
         <div className="container mx-auto px-4 max-w-3xl">
         <SectionHeader
@@ -96,7 +96,7 @@ export default function FAQPage() {
           ))}
         </Accordion>
 
-        <div className="mt-12 bg-slate-50 rounded-xl p-8 text-center">
+        <div className="mt-12 bg-blue-50/50 rounded-xl p-8 text-center border border-blue-100">
           <h3 className="text-xl font-semibold text-slate-900 mb-2">Still Have Questions?</h3>
           <p className="text-slate-600 mb-6">
             Contact us directly and we&apos;ll be happy to answer any specific questions about your belt or our process.

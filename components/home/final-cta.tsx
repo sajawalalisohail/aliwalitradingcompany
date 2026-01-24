@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export function FinalCTA() {
   return (
@@ -45,13 +46,9 @@ export function FinalCTA() {
               transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
               className="pt-4"
             >
-              <Link
-                href="/sell"
-                className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:gap-3"
-              >
-                Request a Quote
-                <span>→</span>
-              </Link>
+              <Button size="default" className="bg-blue-900 hover:bg-blue-950 text-white" asChild>
+                <Link href="/sell">Request a Quote</Link>
+              </Button>
             </motion.div>
           </div>
         </motion.div>

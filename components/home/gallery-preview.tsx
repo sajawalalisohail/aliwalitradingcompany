@@ -3,7 +3,6 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
 import { SectionHeader } from "@/components/shared/section-header"
 import { Button } from "@/components/ui/button"
 
@@ -28,7 +27,7 @@ const operationsPhotos = [
 
 export function GalleryPreview() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-b from-white to-blue-50/30">
       <div className="container mx-auto px-4">
         <SectionHeader
           title="See Our Operations"
@@ -62,11 +61,8 @@ export function GalleryPreview() {
         </div>
 
         <div className="text-center mt-10">
-          <Button size="lg" variant="outline" asChild>
-            <Link href="/gallery">
-              View Full Gallery
-              <ArrowRight className="h-4 w-4 ml-2" />
-            </Link>
+          <Button size="default" className="bg-blue-900 hover:bg-blue-950 text-white" asChild>
+            <Link href="/gallery">View Full Gallery</Link>
           </Button>
         </div>
       </div>

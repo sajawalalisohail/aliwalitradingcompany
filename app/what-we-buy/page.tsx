@@ -20,7 +20,7 @@ export default function WhatWeBuyPage() {
           centered
         />
 
-        <div className="mt-12 bg-slate-50 rounded-xl p-8 md:p-12">
+        <div className="mt-12 bg-blue-50/50 rounded-xl p-8 md:p-12 border border-blue-100">
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Primary Requirements</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="flex items-start gap-3">

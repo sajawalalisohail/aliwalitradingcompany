@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { SectionHeader } from "@/components/shared/section-header"
+import { Button } from "@/components/ui/button"
 
 const faqs = [
   {
@@ -31,7 +32,7 @@ const faqs = [
 
 export function FAQPreview() {
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-20 bg-gradient-to-b from-blue-50/40 to-slate-50">
       <div className="container mx-auto px-4 max-w-3xl">
         <SectionHeader
           title="Common Questions"
@@ -48,8 +49,8 @@ export function FAQPreview() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.1, ease: "easeOut" }}
             >
-              <AccordionItem value={`item-${idx}`}>
-                <AccordionTrigger className="text-left">
+              <AccordionItem value={`item-${idx}`} className="border-blue-100 bg-white/60 rounded-lg px-4 mb-3">
+                <AccordionTrigger className="text-left text-slate-900 hover:text-blue-600">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-slate-600">
@@ -67,9 +68,9 @@ export function FAQPreview() {
           transition={{ duration: 0.4, delay: 0.5, ease: "easeOut" }}
           className="text-center mt-8"
         >
-          <Link href="/faq" className="text-primary hover:underline font-medium">
-            View all FAQs →
-          </Link>
+          <Button size="default" className="bg-blue-900 hover:bg-blue-950 text-white" asChild>
+            <Link href="/faq">View all FAQs</Link>
+          </Button>
         </motion.div>
       </div>
     </section>
